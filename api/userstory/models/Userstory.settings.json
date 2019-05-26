@@ -22,6 +22,9 @@
     "developer": {
       "model": "user",
       "plugin": "users-permissions"
+    },
+    "acceptancecriteria": {
+      "model": "acceptancecriteria"
     }
   }
 }

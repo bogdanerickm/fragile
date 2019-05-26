@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "acceptancecriterias",
+  "info": {
+    "name": "acceptancecriteria",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "userstory": {
+      "model": "userstory"
+    },
+    "description": {
+      "required": true,
+      "type": "text"
+    },
+    "accepted": {
+      "type": "boolean"
+    }
+  }
+}
