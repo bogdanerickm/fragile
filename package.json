@@ -9,7 +9,8 @@
     "start": "node server.js",
     "strapi": "node_modules/strapi/bin/strapi.js",
     "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
-    "postinstall": "node node_modules/strapi/lib/utils/post-install.js"
+    "postinstall": "node node_modules/strapi/lib/utils/post-install.js",
+    "test": "mocha test/**/*.test.js"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -19,13 +20,17 @@
     "eslint-plugin-react": "^7.7.0"
   },
   "dependencies": {
+    "co-mocha": "^1.2.2",
+    "co-supertest": "0.0.10",
+    "knex": "latest",
     "lodash": "^4.17.5",
+    "mocha": "^6.1.4",
+    "sqlite3": "latest",
     "strapi": "3.0.0-alpha.26.1",
-    "strapi-utils": "3.0.0-alpha.26.1",
     "strapi-hook-bookshelf": "3.0.0-alpha.26.1",
     "strapi-hook-knex": "3.0.0-alpha.26.1",
-    "knex": "latest",
-    "sqlite3": "latest"
+    "strapi-utils": "3.0.0-alpha.26.1",
+    "supertest": "^4.0.2"
   },
   "author": {
     "name": "bogui",
