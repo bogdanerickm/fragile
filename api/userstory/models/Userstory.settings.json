@@ -23,8 +23,9 @@
       "model": "user",
       "plugin": "users-permissions"
     },
-    "acceptancecriteria": {
-      "model": "acceptancecriteria"
+    "acceptancecriterias": {
+      "collection": "acceptancecriteria",
+      "via": "userstory"
     }
   }
 }
