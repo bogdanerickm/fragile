@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-'use strict';
+"use strict";
 
 /**
  * Use `server.js` to run your application without `$ strapi start`.
@@ -11,6 +11,6 @@
 process.chdir(__dirname);
 
 (() => {
-  const strapi = require('strapi');
+  const strapi = require("strapi");
   strapi.start();
 })();
