@@ -11,10 +11,33 @@ describe("userStory Controller Integration", function() {
     });
   });
 
+  describe("POST /userstories", function() {
+    it("should return 200 status code", function*() {
+      const body = {
+        title: "[Proj 002] make readme.md",
+        description: "add readme to repo in github"
+      };
+      yield request("http://localhost:1337")
+        .post("/userstories")
+        .send(body)
+        .expect(200)
+        .end();
+    });
+  });
+
   describe("GET /userstories/:id", function() {
     it("should return 200 status code", function*() {
       yield request("http://localhost:1337")
-        .get("/userstories/1")
+        .get("/userstories/3")
+        .expect(200)
+        .end();
+    });
+  });
+
+  describe("GET /userstories/count", function() {
+    it("should return 200 status code", function*() {
+      yield request("http://localhost:1337")
+        .get("/userstories/count")
         .expect(200)
         .end();
     });
