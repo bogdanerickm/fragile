@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sprints",
+      "handler": "Sprint.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sprints/count",
+      "handler": "Sprint.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sprints/:id",
+      "handler": "Sprint.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sprints",
+      "handler": "Sprint.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sprints/:id",
+      "handler": "Sprint.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sprints/:id",
+      "handler": "Sprint.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
