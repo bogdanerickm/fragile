@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "stories",
+  "info": {
+    "name": "sprint",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "number": {
+      "type": "integer"
+    },
+    "from_date": {
+      "type": "date"
+    },
+    "to_date": {
+      "type": "date"
+    },
+    "userstories": {
+      "collection": "userstory",
+      "via": "sprint"
+    }
+  }
+}
