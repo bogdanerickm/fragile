@@ -30,7 +30,7 @@ Llegar a finalizar el sprint en menos tiempo de lo planeado.
 
 **Oportunidades de Mejora y Planes de acción?**
 
-Coordinar de maner más prolija las tareas que nos proponemos por sprint.
+> Coordinar de maner más prolija las tareas que nos proponemos por sprint.
 Mantener el board de tareas actualizado.           
 Mantener una documentación actualizada.
 
