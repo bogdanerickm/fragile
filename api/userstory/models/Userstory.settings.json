@@ -25,6 +25,17 @@
     },
     "acceptancecriteria": {
       "model": "acceptancecriteria"
+    },
+    "story_points": {
+      "enum": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "8",
+        "13"
+      ],
+      "type": "enumeration"
     }
   }
 }
