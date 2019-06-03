@@ -44,4 +44,62 @@ describe("userStory Controller Integration", function() {
         .end();
     });
   });
+
+  describe("POST userstories with story points", function() {
+    it("should return 200 status code with valid story points", function*() {
+      const body = {
+        title: "[Proj 002] make readme.md",
+        description: "add readme to repo in github",
+        story_points: 3
+      };
+      return request("http://localhost:1337")
+        .post("/userstories")
+        .send(body)
+        .expect(200)
+        .end();
+    });
+
+
+    it("should return 400 status code with invalid story points", function*() {
+      const body = {
+        title: "[Proj 002] make readme.md",
+        description: "add readme to repo in github",
+        story_points: 4
+      };
+      return request("http://localhost:1337")
+        .post("/userstories")
+        .send(body)
+        .expect(400)
+        .end();
+    });
+  });
+
+  describe("PUT userstories with story points", function() {
+    it("should return 200 status code with valid story points", function*() {
+      const body = {
+        title: "[Proj 002] make readme.md",
+        description: "add readme to repo in github",
+        story_points: 3
+      };
+      return request("http://localhost:1337")
+        .put("/userstories/2")
+        .send(body)
+        .expect(200)
+        .end();
+    });
+
+
+    it("should return 400 status code with invalid story points", function*() {
+      const body = {
+        title: "[Proj 002] make readme.md",
+        description: "add readme to repo in github",
+        story_points: 4
+      };
+      return request("http://localhost:1337")
+        .put("/userstories/2")
+        .send(body)
+        .expect(400)
+        .end();
+    });
+  });
 });

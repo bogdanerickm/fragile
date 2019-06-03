@@ -37,7 +37,7 @@
       "path": "/userstories/:id",
       "handler": "Userstory.update",
       "config": {
-        "policies": []
+        "policies": ["global.isFibonacci"]
       }
     },
     {
