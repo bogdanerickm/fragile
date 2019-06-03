@@ -9,5 +9,5 @@ A quick description of FrAgile.
 2) npm start
 
 
-#Trello
+# Trello
 https://trello.com/b/DrGm8NV4/fragile
