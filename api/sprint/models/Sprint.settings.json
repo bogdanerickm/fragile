@@ -19,6 +19,10 @@
     },
     "to_date": {
       "type": "date"
+    },
+    "userstories": {
+      "collection": "userstory",
+      "via": "sprint"
     }
   }
 }

@@ -37,6 +37,10 @@
         "13"
       ],
       "type": "enumeration"
+    },
+    "sprint": {
+      "model": "sprint",
+      "via": "userstories"
     }
   }
 }

@@ -12,7 +12,8 @@
   },
   "attributes": {
     "userstory": {
-      "model": "userstory"
+      "model": "userstory",
+      "via": "acceptancecriterias"
     },
     "description": {
       "required": true,
