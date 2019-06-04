@@ -19,10 +19,6 @@ describe("userStory Controller Integration", function() {
       .end();
   })
 
-  after(()=>{
-    strapi.stop()
-  })
-
   it("GET /userstories should return 200 status code", function*() {
     yield request("http://localhost:1337")
       .get("/userstories")
