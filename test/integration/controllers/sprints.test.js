@@ -1,12 +1,14 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable semi */
 /* eslint-disable no-undef */
 /* eslint-disable quotes */
 /* eslint-disable indent */
 /* eslint-disable require-yield */
 const request = require("co-supertest");
+const strapi = require("strapi");
 
 describe("Sprint Controller Integration", function() {
-  before(function(){
+  before(async function(){
     const body = {
       number: "1",
       from_date: "31-05-2016",

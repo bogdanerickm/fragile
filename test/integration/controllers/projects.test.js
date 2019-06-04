@@ -5,9 +5,10 @@
 /* eslint-disable require-yield */
 
 const request = require("co-supertest");
+const strapi = require("strapi");
 
 describe("Project Controller Integration", function() {
-  before(function(){
+  before(async function(){
     const body = {
       name: "FrAgile",
       description: "has to be on markdown",

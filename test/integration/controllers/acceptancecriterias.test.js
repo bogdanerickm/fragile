@@ -5,9 +5,12 @@
 /* eslint-disable require-yield */
 
 const request = require("co-supertest");
+const strapi = require("strapi");
 
 describe("acceptance criteria Controller Integration", function() {
-  before(function(){
+  before(async function(){
+    this.timeout(25000)
+    await strapi.start();
     const body = {
       accepted: true,
       description: "has to be on markdown"
@@ -18,6 +21,7 @@ describe("acceptance criteria Controller Integration", function() {
       .expect(200)
       .end();
   })
+
 
   it("GET /acceptancecriteria should return 200 status code", function*() {
     yield request("http://localhost:1337")

@@ -5,9 +5,10 @@
 /* eslint-disable require-yield */
 
 const request = require("co-supertest");
+const strapi = require("strapi");
 
 describe("userStory Controller Integration", function() {
-  before(function(){
+  before(async function(){
     const body = {
       title: "[Proj 002] make readme.md",
       description: "add readme to repo in github"
@@ -17,7 +18,11 @@ describe("userStory Controller Integration", function() {
       .send(body)
       .end();
   })
-  
+
+  after(()=>{
+    strapi.stop()
+  })
+
   it("GET /userstories should return 200 status code", function*() {
     yield request("http://localhost:1337")
       .get("/userstories")
