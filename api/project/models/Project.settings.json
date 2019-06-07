@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "projects",
+  "info": {
+    "name": "project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "required": true,
+      "type": "string"
+    },
+    "start_date": {
+      "required": true,
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    }
+  }
+}
