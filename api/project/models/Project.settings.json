@@ -25,6 +25,12 @@
     },
     "end_date": {
       "type": "date"
+    },
+    "users": {
+      "collection": "user",
+      "via": "projects",
+      "dominant": true,
+      "plugin": "users-permissions"
     }
   }
 }
