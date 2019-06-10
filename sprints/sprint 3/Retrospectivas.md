@@ -6,7 +6,7 @@
 
 **Pablo**
 
-\***\*Lo que hicimos bien?\*\***
+**Lo que hicimos bien?**
 
 > Hicimos las tareas con más anticipación, pudimos resolver mejor los inconvenientes. Llegamos con lo estimado.
 
@@ -20,7 +20,7 @@
 
 ---
 
-\***\*Florencia\*\***
+**Florencia**
 
 **Lo que hicimos bien?**
 
@@ -36,7 +36,7 @@
 
 ---
 
-\***\*Bogdan\*\***
+**Bogdan**
 
 **Lo que hicimos bien?**
 
@@ -52,7 +52,7 @@
 
 ---
 
-\***\*Fernando\*\***
+**Fernando**
 
 **Lo que hicimos bien?**
 
