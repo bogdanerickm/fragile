@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "actionitems",
+  "info": {
+    "name": "actionitem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "description": {
+      "required": true,
+      "type": "text"
+    },
+    "retrospective": {
+      "model": "retrospective",
+      "via": "actionitems"
+    },
+    "user": {
+      "model": "user",
+      "via": "actionitems",
+      "plugin": "users-permissions"
+    }
+  }
+}

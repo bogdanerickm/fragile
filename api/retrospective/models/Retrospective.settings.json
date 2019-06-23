@@ -22,6 +22,10 @@
     "sprint": {
       "model": "sprint",
       "via": "retrospective"
+    },
+    "actionitems": {
+      "collection": "actionitem",
+      "via": "retrospective"
     }
   }
 }
