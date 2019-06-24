@@ -41,6 +41,11 @@
     "sprint": {
       "model": "sprint",
       "via": "userstories"
+    },
+    "reviewer": {
+      "model": "user",
+      "via": "reviewed_userstories",
+      "plugin": "users-permissions"
     }
   }
 }
