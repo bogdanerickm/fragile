@@ -56,6 +56,14 @@
     "actionitems": {
       "collection": "actionitem",
       "via": "user"
+    },
+    "reviewed_userstories": {
+      "collection": "userstory",
+      "via": "reviewer"
+    },
+    "tested_userstories": {
+      "collection": "userstory",
+      "via": "tester"
     }
   },
   "collectionName": "users-permissions_user"
