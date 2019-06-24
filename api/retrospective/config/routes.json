@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/retrospectives",
+      "handler": "Retrospective.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/retrospectives/count",
+      "handler": "Retrospective.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/retrospectives/:id",
+      "handler": "Retrospective.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/retrospectives",
+      "handler": "Retrospective.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/retrospectives/:id",
+      "handler": "Retrospective.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/retrospectives/:id",
+      "handler": "Retrospective.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

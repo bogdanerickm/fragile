@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "retrospectives",
+  "info": {
+    "name": "retrospective",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "retrospective_date": {
+      "required": true,
+      "type": "date"
+    },
+    "report": {
+      "required": true,
+      "type": "text"
+    },
+    "sprint": {
+      "model": "sprint",
+      "via": "retrospective"
+    },
+    "actionitems": {
+      "collection": "actionitem",
+      "via": "retrospective"
+    }
+  }
+}
