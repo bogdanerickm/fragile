@@ -51,6 +51,11 @@
       "model": "user",
       "via": "tested_userstories",
       "plugin": "users-permissions"
+    },
+    "attachment": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }
