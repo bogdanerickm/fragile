@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/developerdedications",
+      "handler": "Developerdedication.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/developerdedications/count",
+      "handler": "Developerdedication.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/developerdedications/:id",
+      "handler": "Developerdedication.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/developerdedications",
+      "handler": "Developerdedication.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/developerdedications/:id",
+      "handler": "Developerdedication.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/developerdedications/:id",
+      "handler": "Developerdedication.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

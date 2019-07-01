@@ -31,6 +31,10 @@
       "via": "projects",
       "dominant": true,
       "plugin": "users-permissions"
+    },
+    "dedications": {
+      "collection": "developerdedication",
+      "via": "project"
     }
   }
 }
