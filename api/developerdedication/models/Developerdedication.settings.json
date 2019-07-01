@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "developerdedications",
+  "info": {
+    "name": "developerdedication",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "developer": {
+      "model": "user",
+      "via": "dedications",
+      "plugin": "users-permissions"
+    },
+    "project": {
+      "model": "project",
+      "via": "dedications"
+    },
+    "percentage": {
+      "type": "decimal",
+      "max": 1,
+      "required": true
+    }
+  }
+}
