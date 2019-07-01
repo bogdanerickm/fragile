@@ -21,6 +21,11 @@
     },
     "accepted": {
       "type": "boolean"
+    },
+    "attachment": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }
