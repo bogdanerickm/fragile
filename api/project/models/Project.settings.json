@@ -32,6 +32,9 @@
       "dominant": true,
       "plugin": "users-permissions"
     },
+    "expected_speed": {
+      "type": "integer"
+    },
     "dedications": {
       "collection": "developerdedication",
       "via": "project"
