@@ -23,6 +23,9 @@
       "model": "user",
       "via": "actionitems",
       "plugin": "users-permissions"
+    },
+    "end_date": {
+      "type": "date"
     }
   }
 }

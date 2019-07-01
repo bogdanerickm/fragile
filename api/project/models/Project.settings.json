@@ -31,6 +31,9 @@
       "via": "projects",
       "dominant": true,
       "plugin": "users-permissions"
+    },
+    "expected_speed": {
+      "type": "integer"
     }
   }
 }
