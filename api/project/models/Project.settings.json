@@ -34,6 +34,10 @@
     },
     "expected_speed": {
       "type": "integer"
+    },
+    "dedications": {
+      "collection": "developerdedication",
+      "via": "project"
     }
   }
 }
