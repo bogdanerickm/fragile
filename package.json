@@ -23,7 +23,7 @@
     "co-mocha": "^1.2.2",
     "co-supertest": "0.0.10",
     "knex": "latest",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.21",
     "mocha": "^6.1.4",
     "sqlite3": "latest",
     "strapi": "3.0.0-alpha.26.1",
