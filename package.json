@@ -24,7 +24,7 @@
     "co-supertest": "0.0.10",
     "knex": "latest",
     "lodash": "^4.17.5",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "sqlite3": "latest",
     "strapi": "3.0.0-alpha.26.1",
     "strapi-hook-bookshelf": "3.0.0-alpha.26.1",
